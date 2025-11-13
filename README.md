@@ -1,16 +1,75 @@
-# React + Vite
+# 📄 README — Meme Template Viewer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Project Overview
 
-Currently, two official plugins are available:
+A simple web app that shows meme templates using an API.
+Built with **React**, **Vite**, and **Tailwind CSS**.
+Includes a **search bar**, responsive cards, and centered images.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🔗 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Deployed Link:** [https://meme-template-tawny.vercel.app/](https://meme-template-tawny.vercel.app/)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Steps I Followed to Build the Project
+
+### 1️⃣ Create React Project
+
+```bash
+npm create vite@latest meme-template-viewer --template react
+```
+
+### 2️⃣ Install dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Install Tailwind CSS (v3.4.13)
+
+```bash
+npm install -D tailwindcss@3.4.13 postcss autoprefixer
+npx tailwindcss.init -p
+```
+
+### 4️⃣ Configure Tailwind
+
+* Added Tailwind paths in `tailwind.config.js`
+* Imported Tailwind in `index.css`
+
+### 5️⃣ Build the UI
+
+* Search bar
+* MemeCard component
+* API fetch (Imgflip)
+* Grid layout
+* Centered images
+* Borders + hover effect
+* Gray background
+
+### 6️⃣ Run locally
+
+```bash
+npm run dev
+```
+
+### 7️⃣ Deployment (Vercel)
+
+* Pushed code to GitHub
+* Imported repository in Vercel
+* Vercel auto-built and deployed the project
+
+---
+
+## 📁 Tech Used
+
+* React (Vite)
+* Tailwind CSS
+* JavaScript
+* Imgflip API
+* Vercel Hosting
+
+
